@@ -1,0 +1,265 @@
+html{
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Neue Haas Black', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    margin:0;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 4rem;
+    background-color: none;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.navbar-icons{
+    display: flex;
+    align-items: center;
+}
+
+.icon-button{
+    background: none;
+    border: none;
+    cursor: poitner;
+    font-size: 1.5rem;
+    color: gray;
+    margin-right: 20px;
+}
+
+.hide-sidebar-button{
+    font-family: sans-serif;
+    color:gray;
+    margin-right: 30px;
+    height:3rem;
+    background-color:none;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-container--image{
+    width: 70%;
+    height: 100%;
+    padding: 4rem;
+}
+
+.flex-container--image img{
+    width: 90%;
+    height: 95%;
+    object-fit: contain;
+}
+
+.flex-container--content{
+    width: 30%;
+    height: 100vh;
+    padding: 4rem;
+    overflow: scroll;
+}
+
+
+.content-toggle--container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-toggle.active::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-top: 0.1px;
+}
+
+.content-toggle{
+    flex: 50%;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.content-toggle.active{
+    border-bottom: 1px solid black;
+    width: 20rem;
+    font-weight: lighter;
+}
+
+.content--connections{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.flex-container--content h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.gray--line{
+    opacity: 50%;
+}
+
+.timestamp--text{
+    font-family: sans-serif;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight:lighter;
+
+}
+
+.bold{
+    font-weight:bold;
+    color: black;
+    opacity: 200%;
+}
+
+.source-link{
+    font-family: sans-serif;
+    color: gray;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    color:black;
+}
+
+.content-actions{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+
+.bold-tab{
+    font-weight:bold;
+}
+
+.bold-tab:hover{
+    color:black;
+}
+
+.content-toggle.active{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.connect-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:36px;
+    background-color: white;
+    margin-top: 3rem;
+    border: 2px solid rgb(215, 215, 215);
+    width: 17rem;
+    border-radius: 5px;
+}
+
+.connect-button:hover{
+    border-color:black;
+}
+
+.connect-button--content:hover{
+    color:black;
+}
+
+.connect-button--content{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: gray;
+    font-weight: bold;
+
+}
+
+.connections-date{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-right: auto;
+    color: gray;
+    margin-bottom: none;
+}
+
+.connection-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:36px;
+    background-color: white;
+    margin-top: 1rem;
+    border: 2px solid rgb(215, 215, 215);
+    width: 40rem;
+    padding: 1rem;
+}
+
+.connection-blocks:hover {
+    border-color: black;
+}
+
+.connection-blocks-content{
+    font-family:sans-serif;
+    font-weight:lighter;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.connection-content{
+    margin-right: 1rem;
+}
+
+.connection-name{
+    font-size:1.2rem;
+}
+
+.actions-options{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size: 1.3rem;
+}
+
+.actions-options p{
+    margin-bottom: 2px;
+}
+
+.load-more{
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color:gray;
+}
+
+.load-more:hover{
+    color:black;
+}
+
+
+@media (max-width: 1245px){
+    .connection-blocks{
+        max-width: 100%;
+    }
+}
